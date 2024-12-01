@@ -42,7 +42,7 @@ func main() {
 
 		// Measure the time elapsed
 		duration := time.Since(startTime)
-		fmt.Printf("Sent %d requests in %v\n", requestCount, duration)
+		fmt.Printf("Process %d HTTP requests in %v\n", requestCount, duration)
 	}
 
 	// ws get requests
@@ -74,6 +74,6 @@ func main() {
 
 		// Measure the time elapsed
 		duration := time.Since(startTime)
-		fmt.Printf("Processed %d sequential requests in %v\n", requestCount, duration)
+		fmt.Printf("Processed %d WS requests in %v\n", requestCount, duration)
 	}
 }
